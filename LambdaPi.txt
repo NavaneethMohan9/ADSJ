@@ -1,0 +1,13 @@
+import java.util.*;
+
+interface Value{
+	public Double pi();
+}
+public class LambdaPI{
+	public static void main(String args[]){
+		Value pi = ()-> {
+			return 3.14;
+		};
+		System.out.print("PI value: "+pi.pi());
+	}
+}

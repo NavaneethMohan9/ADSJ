@@ -1,0 +1,18 @@
+interface StringFunction{ 
+	String reverse(String s); 
+}
+
+public class BlockLambdaReverse{
+	public static void main(String[] args){
+		java.util.Scanner scan = new java.util.Scanner(System.in);
+		StringFunction sf = (s) -> {
+			String r = "";
+			for(int i=s.length()-1; i>=0; i--)
+				r += s.charAt(i);
+			return r;
+		};
+		System.out.println("Enter an input string: ");
+		String s = scan.nextLine();
+		System.out.println("The reverse of "+s+" is "+sf.reverse(s));
+	}
+}

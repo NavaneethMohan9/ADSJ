@@ -1,0 +1,26 @@
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Iterator;
+public class IteratorDemo{
+	public static void main(String args[]){
+		ArrayList<Integer> al = new ArrayList<>();
+		al.add(3);
+		al.add(7);
+		al.add(9);
+		System.out.println("Iterating ArrayList of Integers :");
+		Iterator<Integer> ali = al.iterator();
+		while(ali.hasNext()){
+			System.out.println(ali.next());
+		}
+		LinkedList<String> ll = new LinkedList<>();
+		ll.add("ADSJ");
+		ll.add("Lab");
+		ll.add("External");
+		System.out.println("Iterating LinkedList of Strings :");
+		Iterator<String> lli = ll.iterator();
+		while(lli.hasNext()){
+			System.out.println(lli.next());
+		}
+	}
+}
+		
